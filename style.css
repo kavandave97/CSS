@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2b2f6c;
+  font-family: arial;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 840px;
+}
+
+.wrapper .btn {
+  width: 170px;
+  margin: 0 20px;
+  padding: 15px 0;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  background: #fff;
+  position: relative;
+}
+
+.btn p {
+  color: #2b2f6c;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+.BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+.BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+.BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
+.btn:hover .BorderTopBottom:before,
+.btn:hover .BorderTopBottom:after {
+  width: 184px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover .BorderLeftRight:before,
+.btn:hover .BorderLeftRight:after {
+  height: 57px;
+  transition: all 0.5s ease;
+}
+
+/* media queries */
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    width: 180px;
+  }
+  .wrapper .btn {
+    margin: 15px 0;
+  }
+}
