@@ -78,6 +78,13 @@ body {
   transition: all 0.5s ease;
 }
 
+h1{
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bold;
+  color: white;
+}
+
 .btn:hover .BorderTopBottom:before,
 .btn:hover .BorderTopBottom:after {
   width: 184px;
